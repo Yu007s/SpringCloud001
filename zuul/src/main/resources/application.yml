@@ -1,0 +1,17 @@
+server:
+  port: 8000
+spring:
+  application:
+    #d当前服务在Eureka Server上的名称
+    name: gateway
+eureka:
+  client:
+    service-url:
+      #注册中心的访问地址
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    #是否将当前服务的IP注册到Eureka Server
+    prefer-ip-address: true
+zuul:
+  routes:   # 为服务提供者 来设置映射
+    providerJYS: /provider/**
