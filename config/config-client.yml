@@ -1,6 +1,14 @@
 server:
   port: 10000
+spring:
+  application:
+    #d当前服务在Eureka Server上的名称
+    name: config-client-github
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http
+    service-url:
+      #注册中心的访问地址
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    #是否将当前服务的IP注册到Eureka Server
+    prefer-ip-address: true
