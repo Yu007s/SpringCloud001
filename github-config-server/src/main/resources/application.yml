@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: github-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Yu007s/SpringCloud001.git
+          search-paths: config
+          username: 617622400@qq.com
+          password: onkyo78951
+        default-label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

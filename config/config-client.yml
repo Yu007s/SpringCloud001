@@ -3,7 +3,7 @@ server:
 spring:
   application:
     #d当前服务在Eureka Server上的名称
-    name: config-client-github
+    name: config-client
 eureka:
   client:
     service-url:

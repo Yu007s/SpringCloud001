@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="native-config-server" />
         <module name="hystrix" />
+        <module name="github-config-server" />
         <module name="restTemplate" />
         <module name="eurekaClient" />
         <module name="ribbon" />
@@ -16,6 +17,7 @@
         <module name="zuul" />
         <module name="eurekaServer" />
         <module name="feign" />
+        <module name="github-config-client" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>
@@ -27,6 +29,8 @@
       <module name="eurekaClient" options="-parameters" />
       <module name="eurekaServer" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="github-config-client" options="-parameters" />
+      <module name="github-config-server" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="native-config-client" options="-parameters" />
       <module name="native-config-server" options="-parameters" />
