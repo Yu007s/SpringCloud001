@@ -11,6 +11,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @program SpringCloud001
  */
 @SpringBootApplication
+
 @EnableConfigServer
 public class GithubConfigServerApplication {
     public static void main(String[] args) {
